@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="CSS/alphabet_learning.css">
+</head>
+<body>
+    <!-- <div class="nav">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="number.html">Number Learning</a>
+            <a href="story.html">Stories</a>
+          </nav>
+    </div> -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+          <img src="Images/logo2.png" alt="BrightKids Academy Logo">
+          <h1> BrightKids Academy</h1>
+      </div>
+      <div class="navbar-links">
+          <a th:href="@{/home}" >Home</a>
+          
+		
+          <a th:href="@{/number_learning}">Number Learning</a>
+          <a th:href="@{/story}">Stories</a>
+       
+       
+      </div>
+  </nav>
+    <div class="alphabet-learning">
+        <!-- Introduction Section -->
+        <section class="intro">
+          <h1>Learn the Alphabet</h1>
+          <p>Welcome to the Alphabet Learning section! Click on each letter to start learning and have fun with our interactive activities.</p>
+        </section>
+      
+        <!-- Interactive Alphabet Chart -->
+        <section class="alphabet-chart">
+          <h2>Alphabet Chart</h2>
+          <div class="alphabet-grid">
+            <!-- Example Letter -->
+            <div class="letter" id="a">
+              <img src="path/to/letter-a-image.png" alt="A">
+              <p>A</p>
+            </div>
+            
+
+            <!-- //from here -->
+             <div class="letter" id="b">
+              <img src="path/to/letter-a-image.png" alt="B">
+              <p>B</p>
+             </div>
+             <div class="letter" id="c">
+              <img src="path/to/letter-a-image.png" alt="C">
+              <p>C</p>
+             </div>
+             <div class="letter" id="d">
+              <img src="path/to/letter-a-image.png" alt="D">
+              <p>D</p>
+             </div>
+             <div class="letter" id="e">
+              <img src="path/to/letter-a-image.png" alt="E">
+              <p>E</p>
+             </div>
+             <div class="letter" id="f">
+              <img src="path/to/letter-a-image.png" alt="F">
+              <p>F</p>
+             </div>
+             <div class="letter" id="g">
+              <img src="path/to/letter-a-image.png" alt="G">
+              <p>G</p>
+             </div>
+             <div class="letter" id="h">
+              <img src="path/to/letter-a-image.png" alt="H">
+              <p>H</p>
+             </div>
+             <div class="letter" id="i">
+              <img src="path/to/letter-a-image.png" alt="I">
+              <p>I</p>
+             </div>
+             <div class="letter" id="j">
+              <img src="path/to/letter-a-image.png" alt="J">
+              <p>J</p>
+             </div>
+             <div class="letter" id="k">
+               <img src="path/to/letter-a-image.png" alt="K">
+              <p>K</p>
+             </div>
+             <div class="letter" id="l">
+               <img src="path/to/letter-a-image.png" alt="L">
+              <p>L</p>
+             </div>
+             <div class="letter" id="m">
+               <img src="path/to/letter-a-image.png" alt="M">
+              <p>M</p>
+             </div>
+             <div class="letter" id="n">
+               <img src="path/to/letter-a-image.png" alt="N">
+              <p>N</p>
+             </div>
+             <div class="letter" id="o">
+               <img src="path/to/letter-a-image.png" alt="O">
+              <p>O</p>
+             </div>
+             <div class="letter" id="p">
+               <img src="path/to/letter-a-image.png" alt="P">
+              <p>P</p>
+             </div>
+             <div class="letter" id="q">
+               <img src="path/to/letter-a-image.png" alt="Q">
+              <p>Q</p>
+             </div>
+             <div class="letter" id="r">
+               <img src="path/to/letter-a-image.png" alt="R">
+              <p>R</p>
+             </div>
+             <div class="letter" id="s">
+               <img src="path/to/letter-a-image.png" alt="S">
+              <p>S</p>
+             </div>
+             <div class="letter" id="t">
+               <img src="path/to/letter-a-image.png" alt="T">
+              <p>T</p>
+             </div>
+             <div class="letter" id="u">
+               <img src="path/to/letter-a-image.png" alt="U">
+              <p>U</p>
+             </div>
+             <div class="letter" id="v">
+               <img src="path/to/letter-a-image.png" alt="V">
+              <p>V</p>
+             </div>
+             <div class="letter" id="w">
+               <img src="path/to/letter-a-image.png" alt="W">
+              <p>W</p>
+             </div>
+             <div class="letter" id="x">
+               <img src="path/to/letter-a-image.png" alt="X">
+              <p>X</p>
+             </div>
+             <div class="letter" id="y">
+               <img src="path/to/letter-a-image.png" alt="Y">
+              <p>Y</p>
+             </div>
+             <div class="letter" id="z">
+              <img src="path/to/letter-a-image.png" alt="Z">
+             <p>Z</p>
+            </div>
+            <!-- Repeat for each letter -->
+          </div>
+        </section>
+      
+        <!-- Learning Activities -->
+        <section class="activities">
+          <h2>Fun Activities</h2>
+          <div class="activity">
+            <h3>Letter Recognition Game</h3>
+            <button><a href="alphaRecogGame.html">Play Now</a></button>
+          </div>
+         
+        </section>
+      
+        <!-- Educational Videos -->
+        <section class="videos">
+          <h2>Watch & Learn</h2>
+          <div class="video">
+            <h3>Alphabet Song</h3>
+            <video src="path/to/alphabet-song.mp4" controls></video>
+          </div>
+          <div class="video">
+            <h3>Letter Stories</h3>
+            <video src="path/to/letter-stories.mp4" controls></video>
+          </div>
+        </section>
+      
+        <!-- Printable Worksheets
+        <section class="worksheets">
+          <h2>Printable Worksheets</h2>
+          <a href="path/to/worksheet1.pdf" download>Download Alphabet Coloring Page</a>
+          <a href="path/to/worksheet2.pdf" download>Download Letter Tracing Sheet</a>
+        </section> -->
+      
+        <!-- Progress Tracking -->
+        <section class="progress-tracking">
+          <h2>Your Progress</h2>
+          <p>Track your achievements and see what’s next!</p>
+          <!-- Example progress overview -->
+          <div class="badges">
+            <img src="path/to/badge1.png" alt="Badge 1">
+            <img src="path/to/badge2.png" alt="Badge 2">
+          </div>
+        </section>
+      
+        <!-- Call-to-Action -->
+        <section class="cta">
+          <h2>Continue Learning</h2>
+          <button>Explore Number Learning</button>
+        </section>
+      
+        <!-- nav -->
+       
+      </div>
+      
+</body>
+</html>

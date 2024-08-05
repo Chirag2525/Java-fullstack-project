@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories - BrightKids Academy</title>
+    <link rel="stylesheet" href="CSS/story.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="Images/logo2.png" alt="BrightKids Academy Logo">
+            <h1> BrightKids Academy</h1>
+        </div>
+        <div class="navbar-links">
+            <a href="" class="active">Home</a>
+            
+            <a th:href="@{/alphabet_learning}">Alphabet Learning</a>
+            <a href="number.html">Number Learning</a>
+            
+            <a href="about.html" target="_blank">About</a>
+            <a href="contact.html" target="_blank">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Stories</h2>
+            <ul id="story-list">
+                <li data-story="story1">The Tortoise and the Rabbit</li>
+                <li data-story="story2">The Lion and the Mouse</li>
+				<li data-story="story3">grandmother</li>
+				<li data-story="story4">crow</li>
+				<li data-story="story5">Capman And Monkeys</li>
+				
+                <!-- Add more stories as needed -->
+            </ul>
+        </div>
+        <div class="story-content">
+            <div id="story1" class="story active">
+                <h3>The Tortoise and the Rabbit</h3>
+                <section class="videos">
+                    <div class="video-container">
+                        <video class="video-player" width="600" controls controlsList="nodownload">
+                            <source src="Images/tortoise and rabit.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </section>
+            </div>
+            <div id="story2" class="story">
+                <h3>The Lion and the Mouse</h3>
+                <section class="videos">
+                    <div class="video-container">
+                        <video class="video-player" width="600" controls controlsList="nodownload">
+                            <source src="Images/lion and mouse.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </section>
+            </div>
+			<div id="story3" class="story">
+			              <h3>grandmother</h3>
+			              <section class="videos">
+			                  <div class="video-container">
+			                      <video class="video-player" width="600" controls controlsList="nodownload">
+			                          <source src="Images/grandmother.mp4" type="video/mp4">
+			                          Your browser does not support the video tag.
+			                      </video>
+			                  </div>
+			              </section>
+			     </div>
+				<div id="story4" class="story">
+					        <h3>Crow and Pot</h3>
+					         <section class="videos">
+					              <div class="video-container">
+					                 <video class="video-player" width="600" controls controlsList="nodownload">
+					                      <source src="Images/crow.mp4" type="video/mp4">
+					                     Your browser does not support the video tag.
+					                </video>
+					             </div>
+					         </section>
+				</div>
+				<div id="story5" class="story">
+									        <h3>Capman And Monkeys</h3>
+									         <section class="videos">
+									              <div class="video-container">
+									                 <video class="video-player" width="600" controls controlsList="nodownload">
+									                      <source src="Images/capman.mp4" type="video/mp4">
+									                     Your browser does not support the video tag.
+									                </video>
+									             </div>
+									         </section>
+								</div>
+			</div>														                				               
+            <!-- Add more stories as needed -->
+        </div>
+    </div>
+ <footer class="footer">
+        <p>&copy; 2024 BrightKids Academy. All rights reserved.</p>
+    </footer>
+   <script src="JS/story.js"></script>
+</body>
+</html>
